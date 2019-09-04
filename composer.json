@@ -12,7 +12,7 @@
     "require": {
         "php": "^7.3",
         "fideloper/proxy": "^4.1",
-        "laravel/framework": "5.8.34"
+        "laravel/framework": "^6.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "2.6.2",
@@ -27,7 +27,8 @@
         "phpunit/phpunit": "^8.3",
         "roave/security-advisories": "dev-master",
         "sebastian/phpcpd": "^4.1",
-        "squizlabs/php_codesniffer": "^3.4"
+        "squizlabs/php_codesniffer": "^3.4",
+        "facade/ignition": "^1.4"
     },
     "autoload": {
         "psr-4": {
@@ -83,7 +84,7 @@
         "phpcs": [
             "phpcs"
         ],
-        "deploy":[
+        "deploy": [
             "@php artisan config:cache",
             "@php artisan route:cache"
         ]
@@ -95,7 +96,7 @@
         "phploc": "Runs phploc and puts output in docs/phploc.txt",
         "phpcpd": "Runs phpcpd copy and paste detector",
         "phpcs": "Runs phpcs with PSR12 on app and tests folder",
-        "deploy":"Run this to deploy this application to a production or production-like server"
+        "deploy": "Run this to deploy this application to a production or production-like server"
     },
     "suggest": {
         "package-for-laravel/api": "Tools for a laravel api install.",
@@ -105,7 +106,7 @@
         "spatie/laravel-cors": "CORS support for API",
         "spatie/laravel-permission": "Permission System",
         "zircote/swagger-php": "Open API Generation for API",
-        "bugsnag/bugsnag-laravel":"Bugsnag for Laravel"
+        "bugsnag/bugsnag-laravel": "Bugsnag for Laravel"
     },
     "config": {
         "preferred-install": "dist",
