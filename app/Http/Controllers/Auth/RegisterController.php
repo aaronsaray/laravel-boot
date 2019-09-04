@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http\Controllers\Auth;
@@ -11,8 +12,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;
 
 /**
- * Class RegisterController
- * @package App\Http\Controllers\Auth
+ * Class RegisterController.
  */
 class RegisterController extends Controller
 {

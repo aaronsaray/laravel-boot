@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Tests\Unit;
@@ -6,8 +7,7 @@ namespace Tests\Unit;
 use PackageForLaravel\TestingFramework\TestCases\UnitTestCase;
 
 /**
- * Class ExampleTest
- * @package Tests\Unit
+ * Class ExampleTest.
  */
 class ExampleTest extends UnitTestCase
 {

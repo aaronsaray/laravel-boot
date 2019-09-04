@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 use App\Models\User;
@@ -17,7 +18,7 @@ use Illuminate\Database\Eloquent\Factory;
 |
 */
 
-/** @var Factory $factory */
+/* @var Factory $factory */
 $factory->define(User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,

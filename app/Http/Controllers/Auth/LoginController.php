@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http\Controllers\Auth;
@@ -7,8 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 /**
- * Class LoginController
- * @package App\Http\Controllers\Auth
+ * Class LoginController.
  */
 class LoginController extends Controller
 {

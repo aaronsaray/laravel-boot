@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http\Middleware;
@@ -6,8 +7,7 @@ namespace App\Http\Middleware;
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 
 /**
- * Class EncryptCookies
- * @package App\Http\Middleware
+ * Class EncryptCookies.
  */
 class EncryptCookies extends Middleware
 {

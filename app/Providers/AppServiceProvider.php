@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Providers;
@@ -6,8 +7,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class AppServiceProvider
- * @package App\Providers
+ * Class AppServiceProvider.
  */
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,11 +33,11 @@ class AppServiceProvider extends ServiceProvider
 
     /**
      * Log database queries and bindings to the standard log
-     * Only when in debug mode and not running unit tests
+     * Only when in debug mode and not running unit tests.
      */
     protected function bootDBLogger(): void
     {
-        if ($this->app['config']['app']['debug'] && !$this->app->runningUnitTests()) {
+        if ($this->app['config']['app']['debug'] && ! $this->app->runningUnitTests()) {
             $this->app['db.connection']->listen(function ($query) {
                 $this->app['log']->info($query->sql, ['bindings' => $query->bindings]);
             });
@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the IDE Helper if this is not production
+     * Register the IDE Helper if this is not production.
      */
     protected function registerIdeHelper(): void
     {

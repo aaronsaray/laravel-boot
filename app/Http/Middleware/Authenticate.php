@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http\Middleware;
@@ -6,8 +7,7 @@ namespace App\Http\Middleware;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 
 /**
- * Class Authenticate
- * @package App\Http\Middleware
+ * Class Authenticate.
  */
 class Authenticate extends Middleware
 {

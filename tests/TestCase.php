@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Tests;
@@ -6,8 +7,7 @@ namespace Tests;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
 /**
- * Class TestCase
- * @package Tests
+ * Class TestCase.
  */
 abstract class TestCase extends BaseTestCase
 {
